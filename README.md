@@ -2,7 +2,7 @@
 
 *If you're just looking for the 3D assets, you'll want [this repo](https://github.com/wavetro/testzone-assets) instead.*
 
-🔨 *This repo is under still construction...*
+🔨 *This repo is still under construction...*
 
 ---------------------------------------------------------------------------
 
