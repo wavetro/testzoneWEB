@@ -4,7 +4,7 @@
 
 ### 🔨 How to build
 
-My workflow revolves around [Babylon.js](https://www.babylonjs.com/), [TypeScript](https://www.typescriptlang.org/), and [Vite](https://vitejs.dev/). *(WTZ000 uses [THREE.js](https://threejs.org/) instead of Babylon.)*
+My workflow revolves around [Babylon.js](https://www.babylonjs.com/), [TypeScript](https://www.typescriptlang.org/), and [Vite](https://vitejs.dev/). *(WTZ00 uses [THREE.js](https://threejs.org/) instead of Babylon.)*
 
 1. Make sure you have `npm` installed, which is usually done with a runtime environment like [Node.js](https://nodejs.org/en/download/).
 2. Download or clone the contents of this repo and make sure it all stays in a single folder.
@@ -14,8 +14,8 @@ My workflow revolves around [Babylon.js](https://www.babylonjs.com/), [TypeScrip
 - `npm i @babylonjs/core`
 - `npm i @babylonjs/loaders`
 - `npm i terser` *(for step 6, optional)*
-- `npm i three` *(for WTZ000 only)*
-- `npm i tweakpane` *(for WTZ000 only)*
+- `npm i three` *(for WTZ00 only)*
+- `npm i tweakpane` *(for WTZ00 only)*
 4. Download or clone the [assets repo](https://github.com/wavetro/testzone-assets) and merge the project folders from there into your copy of this repo's source code. You may also want to copy the font files from that repo's `ALL` directory into the folder of any project you plan to build or run.
 5. You can now preview the code in your browser by running `npm run dev` in any project's folder, or you can build the project by running `npm run build`. The output will appear in a "dist" subdirectory. *(If Vite is giving you an error about missing packages, go back to the root folder and use `npm i` to download them.)*
 6. After you build the source, you can optionally run [terser](https://terser.org/) on the outputted code to secure it. You can do this by running `npx terser EXAMPLE_NAME.js -o EXAMPLE_NAME.js -c -m` on every JS file in the "dist" folder.
