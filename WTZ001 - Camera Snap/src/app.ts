@@ -274,7 +274,7 @@ if (test) {
     
     // Intro screen that enables audio
     document.querySelector('#intro').innerHTML = `
-        <p id="p__code">WTZ001</p>
+        <p id="p__code">WTZ01</p>
         <h1>Camera Snap</h1>
         <h2>📦</h2>
         <div class="div__marquee"></div>
