@@ -13,6 +13,7 @@ My workflow revolves around [Babylon.js](https://www.babylonjs.com/), [TypeScrip
 - `npm i vite`
 - `npm i @babylonjs/core`
 - `npm i @babylonjs/loaders`
+- `npm i ammojs-typed`
 - `npm i terser` *(for step 6, optional)*
 - `npm i three` *(for WTZ00 only)*
 - `npm i tweakpane` *(for WTZ00 only)*
