@@ -1,0 +1,252 @@
+/* IMPORTS */
+
+@font-face { 
+    font-family: "BaiJam"; 
+    font-weight: normal;
+    src: url("/BaiJamjuree-MediumLatinSubset.woff");
+}
+
+@font-face { 
+    font-family: "BaiJam";
+    font-weight: bold; 
+    src: url("/BaiJamjuree-BoldLatinSubset.woff");
+}
+
+/* BLOCKS */
+
+body, canvas {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    font-family: "BaiJam";
+    color: #EEEEEE;
+}
+
+body { 
+    background-color: #151515;
+    position: relative;
+    z-index: 0;
+}
+
+canvas { position: absolute; }
+
+h1 { 
+    font-size: 6rem;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 1rem;
+    line-height: 0;
+}
+
+h2 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+button {
+    background-color: #151515;
+    border: 0.3rem solid #EEEEEE;
+    border-radius: 1.2rem;
+    color: #EEEEEE;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "BaiJam";
+    padding: 1rem 1.5rem;
+    transition: 0.2s;
+}
+
+#intro {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 2rem;
+    gap: 2rem;
+}
+
+.gui {
+    position: absolute; 
+    top: 1rem; 
+    right: 1rem;
+}
+
+.gui button {
+    background-color: #00000000;
+    border-radius: 100%;
+    border-width: 0.1em; 
+    width: 2.25em;
+    height: 2.25em;
+    position: relative;
+    padding: 0.25em 0 0 0.05em;
+}
+
+.gui svg {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.gui path { 
+    fill: #EEEEEE;
+    transition: 0.2s;
+}
+
+#gui-modal {
+    width: 42rem;
+    height: 80%;
+    background-color: #404550;
+    border: 2px solid #606570;
+    border-radius: 1em;
+    padding: 1.5em;
+    overflow: auto;
+    scrollbar-width: none;
+    text-align: center;
+    user-select: none;
+}
+
+#gui-modal a { color: #EEEEEE; }
+
+#gui-modal button { 
+    background-color: #00000000;
+    font-size: 1.6rem;
+    border-width: 0.1em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.4rem;
+}
+
+.darkBGcentered {
+    width: 100vw; 
+    height: 100vh; 
+    position: fixed; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #000000CC;
+}
+
+.loadingText {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ELEMENTS */
+
+#p__code {
+    color: #555B69;
+    font-weight: bold;
+    margin-top: -2.5rem;
+}
+
+#p__compatCheck { 
+    color: #555B69;
+    max-width: 60rem; 
+    text-align: center;
+    padding: 0 2.5rem;
+}
+
+#button__GO { margin-top: -1.5rem; }
+
+#gui-modal::-webkit-scrollbar { display: none; }
+
+#gui__info { top: 0.45em; }
+
+#gui-modal__madeby { width: 70%; }
+
+.gui-modal__keybind {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    padding-bottom: 0.1em;
+    border: 0.1em solid #EEEEEE; 
+    border-radius: 0.3em;
+}
+
+.gui-modal__header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.loadingText span {
+    display: inline-block;
+    animation: waving 0.8s ease-in-out infinite;
+}
+
+.loadingText span:nth-of-type(1) { animation-delay: 0.0s; }  /* L */
+.loadingText span:nth-of-type(2) { animation-delay: 0.05s; } /* o */
+.loadingText span:nth-of-type(3) { animation-delay: 0.1s; }  /* a */
+.loadingText span:nth-of-type(4) { animation-delay: 0.15s; } /* d */
+.loadingText span:nth-of-type(5) { animation-delay: 0.2s; }  /* i */
+.loadingText span:nth-of-type(6) { animation-delay: 0.25s; } /* n */
+.loadingText span:nth-of-type(7) { animation-delay: 0.3s; }  /* g */
+
+/* MODIFIERS */
+
+button:hover {
+    background-color: #EEEEEE;
+    color: #151515;
+}
+
+.gui button:hover { background-color: #EEEEEE; }
+
+.gui button:hover path { fill: #151515; }
+
+#gui-modal a:hover { 
+    color: #FFFF00;
+    transition: 0.15s;
+}
+
+#gui-modal button:hover { 
+    background-color: #EEEEEE; 
+    color: #404550;
+}
+
+.gui-modal__keybindSPACE {
+    width: 6em;
+    padding-bottom: 0.1em;
+}
+
+/* KEYFRAMES */
+
+@keyframes waving {
+    0% {   transform: translateY(-0.4rem); }
+    25% {  transform: translateY(0.4rem); }
+    100% { transform: translateY(-0.4rem); }
+}
+
+/* QUERIES */
+
+@media only screen and (max-width: 48em) {
+    h1 { font-size: 3rem; }
+
+    html, body, canvas, #intro, .darkBGcentered { height: 100%; }
+
+    .gui button {
+        height: 1.5em;
+        width: 1.5em;
+        padding: 0;
+        border-width: 0.075em;
+    }
+
+    .gui svg {
+        height: 0.75em;
+        width: 0.75em;
+    }
+
+    #gui__info { top: 0.3em; }
+
+    #gui-modal { width: 70%; }
+
+    #gui-modal__controls { 
+        visibility: hidden; 
+        font-size: 0rem;
+        margin-top: -1rem;
+    }
+}

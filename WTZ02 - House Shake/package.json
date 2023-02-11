@@ -1,0 +1,20 @@
+{
+  "name": "wtz02",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5",
+    "vite": "^4.1.1"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^5.46.0",
+    "@babylonjs/loaders": "^5.46.0",
+    "ammojs-typed": "^1.0.6"
+  }
+}
