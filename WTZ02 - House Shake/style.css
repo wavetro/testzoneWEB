@@ -128,6 +128,7 @@ button {
     align-items: center; 
     justify-content: center; 
     background-color: #000000CC;
+    color: #EEEEEE;
 }
 
 .loadingText {
@@ -249,4 +250,24 @@ button:hover {
         font-size: 0rem;
         margin-top: -1rem;
     }
+}
+
+@media (prefers-color-scheme: light) { 
+
+    body { 
+        background-color: #EEEEEE;
+        color: #151515;
+    }
+
+    button#button__GO {
+        background-color: #EEEEEE;
+        border: 0.3rem solid #151515;
+        color: #151515;
+    }
+
+    button#button__GO:hover {
+        background-color: #151515;
+        color: #EEEEEE;
+    }
+
 }
