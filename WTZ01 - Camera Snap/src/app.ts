@@ -294,7 +294,7 @@ if (test) {
     
     // no WebGL? no app
     document.querySelector('#p__noJS').innerHTML = `
-        <span style="color: #FF3333;"><b>WebGL failed to load. Please use a modern browser that supports it before continuing.</b><br><br><em>(Advanced users: If you disabled WebGL in your browser config, please enable it and use <a href="https://noscript.net/" target="_blank" rel="noreferrer" style="color: #FF3333;">NoScript</a> instead. It will let you whitelist the current domain while still blocking other WebGL websites via custom trust levels. You have to trust me here.)</em></span>
+        <span style="color: #FF3333;"><b>WebGL failed to load. Please use a modern browser that supports it before continuing.</b><br><br><em>(Advanced users: If you disabled WebGL in your browser config, please enable it and use <a href="https://noscript.net/" target="_blank" rel="noreferrer" style="color: #FF3333;">NoScript</a> instead. It will let you whitelist the current domain while still blocking other WebGL websites via custom trust levels. I don't track or fingerprint you with this API.)</em></span>
     `
 
 }
