@@ -396,6 +396,7 @@ function modalOpen() { // open our info modal
                 <br>StuntPlayZYT
                 <br>laura
                 <br>Watsugi Ishikura
+		<br>Alleycat
                 <br>GG
                 <br>heccbro
                 <br>Jambie
