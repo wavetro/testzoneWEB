@@ -417,7 +417,7 @@ function modalOpen() { // open our info modal
                 <a href="https://news.wavetro.net/" target="_blank" rel="noreferrer"><button>Follow for updates</button></a><a href="/"><button>Back to play.wavetro.net</button></a>
                 <br><br>
                 <i><p style="margin: -0.2rem 0 0.3rem 0;">2023-FEB-11</p></i>
-                <i><b><a href="https://github.com/wavetro/testzone/tree/main/WTZ02 - House Shake" target="_blank" rel="noreferrer">BUILT</a> WITH <a href="https://babylonjs.com/" target="_blank" rel="noreferrer">BABYLON</a></b></i>
+                <i><b><a href="https://github.com/wavetro/testzoneWEB/tree/main/WTZ02 - House Shake" target="_blank" rel="noreferrer">BUILT</a> WITH <a href="https://babylonjs.com/" target="_blank" rel="noreferrer">BABYLON</a></b></i>
             </div>
         </div>
         <script>

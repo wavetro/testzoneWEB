@@ -1,6 +1,6 @@
 # WAVETRO TEST ZONE (Source Code)
 
-*If you're just looking for the 2D/3D/audio assets, you'll want [this repo](https://github.com/wavetro/testzone-assets) instead.*
+*If you're just looking for the 2D/3D/audio assets, you'll want [this repo](https://github.com/wavetro/testzoneWEB-assets) instead.*
 
 ### 🔨 How to build
 
@@ -17,7 +17,7 @@ My workflow revolves around [Babylon.js](https://www.babylonjs.com/), [TypeScrip
 - `npm i terser` *(for step 6, optional)*
 - `npm i three` *(for WTZ00 only)*
 - `npm i tweakpane` *(for WTZ00 only)*
-4. Download or clone the [assets repo](https://github.com/wavetro/testzone-assets) and merge the project folders from there into your copy of this repo's source code. You may also want to copy the font files from that repo's `ALL` directory into the folder of any project you plan to build or run.
+4. Download or clone the [assets repo](https://github.com/wavetro/testzoneWEB-assets) and merge the project folders from there into your copy of this repo's source code. You may also want to copy the font files from that repo's `ALL` directory into the folder of any project you plan to build or run.
 5. You can now preview the code in your browser by running `npm run dev` in any project's folder, or you can build the project by running `npm run build`. The output will appear in a "dist" subdirectory. *(If Vite is giving you an error about missing packages, go back to the root folder and use `npm i` to download them.)*
 6. After you build the source, you can optionally run [terser](https://terser.org/) on the outputted code to secure it. You can do this by running `npx terser EXAMPLE_NAME.js -o EXAMPLE_NAME.js -c -m` on every JS file in the "dist" folder.
 7. IMPORTANT: To make sure the final output works properly when deployed online, go to every HTML/CSS file in the "dist" folder and add a dot prefix to EVERY filepath that starts with `/`. For example, any mention of `/assets/file.png` needs to be `./assets/file.png`. I have no clue how to make Vite do this automatically.
